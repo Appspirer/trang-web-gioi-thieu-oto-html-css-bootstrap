@@ -1,0 +1,701 @@
+@font-face {
+    font-family: "Cadillac Sans A";
+    src: url("includes/fonts/CadillacSansA-Book.ttf");
+}
+
+@font-face {
+    font-family: "Cadillac Sans A Medium";
+    src: url("includes/fonts/CadillacSansA-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Audi Type Screen";
+    src: url("includes/fonts/audiTypeScreen.ttf");
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Cadillac Sans A';
+}
+
+.header__top{
+    width: 100%;
+    height: 26px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+}
+
+.header__top div{
+    margin-left: 48px;
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.header__navbar{
+    width: 100%;
+    height: 100px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand{
+    width: 171px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #efefef ;
+}
+
+.navbar-brand img{
+    width: 80px;
+    height: 55.1px;
+}
+
+.nav__item{
+    width: 80%;
+    gap: 256px;
+    padding-left: 20px;
+}
+
+.nav__item p{
+    width: 175px;
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #2B2B2B;
+}
+
+.nav__item ul {
+    list-style: none;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    height: 100px
+}
+
+.nav__item ul li {
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #343132;
+}
+
+.search__button{
+    margin-right: 83px;
+}
+
+.search__button button{
+    border: none;
+    margin-bottom: 5px;
+    font-family: 'Audi Type Screen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #343132;
+}
+
+.search__button button:hover,
+.search__button button:active {
+    color: #343132;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.shadow-linear{
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
+    mix-blend-mode: normal;
+    opacity: 0.05;
+}
+
+.banner{
+    height: 835px;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.banner__vehicle{
+    width: 100%;
+    height: 470px;
+    background-image: url("includes/images//illustration.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
+    position: relative;
+}
+
+.banner__text {
+    position: absolute;
+    top: 0%;
+    left: 28%
+}
+
+.banner__text .title{
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    color: #000000;
+}
+
+.banner__text .content{
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.search__filter{
+    width: 1063px;
+    height: 176px;
+    background-color: #FFFFFF;
+}
+
+.search__filter .tab-content{
+    height: 128px;
+}
+
+.search__filter .nav-tabs{
+    background-color: #000;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px !important;
+    justify-content: center !important;
+}
+
+.search__filter .nav-link {
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.857143px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 0px !important;
+    border-left: 1px solid #adadad !important;
+    height: 48px;
+}
+
+.search__filter .nav-tabs .nav-link.active{
+    height: 48px;
+    width: 100.1%;
+    color: #000 !important;
+    border-radius: 0px !important;
+    border: none !important;
+}
+
+.search__filter .nav-tabs .nav-link:hover{
+    height: 48px;
+    border-color: transparent !important;
+    border: none !important;
+}
+
+.box__search {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 44px;
+    gap: 8px
+}
+
+.box__search .type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3f3f3;
+    border-radius: 4px;
+    width: 214px;
+    height: 48px;
+}
+
+.box__search .make{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3f3f3;
+    border-radius: 4px;
+    width: 177px;
+    height: 48px;
+}
+
+.box__search .model{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3f3f3;
+    border-radius: 4px;
+    width: 205px;
+    height: 48px;
+}
+
+.box__search .keyword{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3f3f3;
+    border-radius: 4px;
+    width: 267px;
+    height: 48px;
+}
+
+.box__search div div {
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #4D4D4D;
+    padding: 0px 20px
+}
+
+.box__search .button button{
+    background: #000;
+    width: 64px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.arrow__down{
+    margin-top: 40px;
+}
+
+.slider__car{
+    background-color: #f2f2f2;
+    padding-top: 153px;
+}
+
+.find__vehicles{
+    width: 100%;
+    height: 620px;
+    background: #ffffff;
+}
+
+.text__find{
+    margin-top: 85px;
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+.text__find .title {
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 30px;
+    color: #343132;
+}
+
+.text__find .content {
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #343132;
+}
+
+.find__car {
+    width: 585px;
+    height: 36px;
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+
+.find__car .nav-tabs{
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    border: none;
+    margin-bottom: 57px;
+}
+
+.find__car .nav-link{
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #343132;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    height: 36px;
+    border-radius: 0px !important;
+}
+
+.find__car .nav-pills .nav-link.active{
+    height: 36px;
+    color: #FFF;
+    background: #6A0316;
+    border-radius: 0px !important;
+}
+
+.find__item{
+    padding: 0px 250px 0px 240px;
+    gap: 48px
+}
+
+.find__item .prev{
+    width: 50px;
+    height: 50px;
+}
+
+.find__item .next{
+    width: 50px;
+    height: 50px;
+}
+
+.express__way{
+    margin-top: 40px;
+    margin-bottom: 39px;
+}
+
+.line__horizontal{
+    height: 1px;
+    width: 160px;
+    background-color: #6A0316;
+}
+
+.text__express .title {
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 29px;
+    margin-top: 29px;
+}
+
+.text__express .content {
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #343132;
+    margin-bottom: 44px;
+    margin-top: 31px;
+    width: 685px;
+}
+
+.express div img{
+    margin-bottom: 50px;
+}
+
+.express div button{
+    padding: 20px 118px 19.31px 118px;
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 68px;
+    background: #fff;
+}
+
+.service{
+    gap: 5px
+}
+
+.service div{
+    position: relative;
+}
+
+.service div img{
+    width: 432px;
+    height: 265px
+}
+
+.service div p{
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 57px;
+    left: 30%;
+}
+
+.text__connect__way .title{
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 36px;
+}
+
+.connect__way__item{
+    width: 100%;
+    height: 224px;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.connect__way__item div{
+    width: 432px;
+    height: 224px;
+}
+
+.connect__way__item div div{
+    width: 80px;
+    height: 80px;
+}
+
+
+.connect__way__item .title{
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.connect__way__item .content{
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+}
+
+.connect__way div button{
+    padding: 20px 153px 20px 152px;
+    font-family: 'Audi Type Screen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    background: #fff;
+    margin-top: 36px;
+    margin-bottom: 76px;
+    border-color: #000 ;
+}
+
+.visit__us{
+    width: 100%;
+    height: 450px;
+    background-image: url("includes/images/bgVisit.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information__visit__us{
+    width: 998px;
+    height: 249px;
+    background-color: #fff;
+}
+
+.information__visit__us .title{
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+    margin-top: 33px;
+}
+
+.information__visit__us .content{
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    margin-top: 11px;
+}
+
+.information__visit__us div button{
+    padding: 21px 162px 19px 141px;
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    background: #fff;
+    border-color: #000;
+    margin-bottom: 45px;
+}
+
+.about__us{
+    padding-top: 41px;
+    width: 100%;
+    height: 764px;
+}
+
+.text__about__us .title{
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #343132;
+    margin-bottom: 32px;
+}
+
+.information__about__us div p{
+    width: 1307px;
+    margin-top: 34px;
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: start;
+    color: #666666;
+}
+
+
+.information__about__us div div {
+    font-family: 'Cadillac Sans A Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #343132;
+}
+
+.information__about__us div div span{
+    color: #BEAD76;
+}
+
+.footer{
+    width: 100%;
+    height: 306px;
+    background-color: #000;
+}
+
+.footer__item{
+    padding: 60px 100px 0px 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.footer__item .w-85{
+    width: 85%;
+}
+
+.footer__item div div p{
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: start;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.footer__item div div p span{
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: start;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.footer__item div div div{
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: start;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.footer__item div div div span{
+    font-family: 'Cadillac Sans A';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: start;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
